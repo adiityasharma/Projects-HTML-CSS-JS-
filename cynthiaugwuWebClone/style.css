@@ -46,6 +46,7 @@ nav h2{
   height: 60%;
   /* background-color: blueviolet; */
   padding: 4vh 3vw;
+  overflow: hidden;
 }
 .heading h1{
   font-size: 10vw;
@@ -54,6 +55,7 @@ nav h2{
   line-height: 9.8vw;
   opacity: 0.6;
 }
+
 .heading h2{
   font-size: 10vw;
   text-transform: uppercase;
@@ -333,6 +335,7 @@ nav h2{
   }
   .second .elem h1{
     font-size: 8vw;
+    /* z-index: 1111; */
   }
   .second .elem p{
     font-size: 3vw;
@@ -440,5 +443,8 @@ nav h2{
   .footer .right a{
     text-decoration: none;
     color: white;
+  }
+  .mincircle{
+    display: none;
   }
 }
