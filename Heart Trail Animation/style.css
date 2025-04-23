@@ -24,8 +24,10 @@ div{
 @keyframes animate {
   0%{
     transform: translate(-50%, -50%);
+    filter: hue-rotate(0);
   }
   100%{
     transform: translate(-50%, -5000%);
+    filter: hue-rotate(720deg);
   }
 }
