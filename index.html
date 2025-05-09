@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <div class="w-full flex flex-col items-center">
+    <nav class="w-full h-24  flex justify-between items-center px-20 shadow-md">
+      <h1 class="home cursor-pointer text-3xl font-medium">Home</h1>
+      <div class="w-80 h-full flex items-center justify-center flex-col ">
+        <h1 class="text-4xl font-bold ">Movie Finder</h1>
+        <p class="mt-1">Find and Save your Favorite Movies</p>  
+      </div>
+      <button id="myFavBtn" class="border px-5 py-3 rounded-md hover:bg-red-400 cursor-pointer hover:scale-107 hover:text-white">My Favorites</button>
+    </nav>
+
+    <div class="w-[60%] mt-5 gap-2 flex justify-center  items-center rounded-4xl shadow-lg">
+      <input id="input" class="w-[90%] px-7 text-lg focus:outline-none py-3 " type="text" placeholder="Search any movie">
+      <button id="search" class="text-md bg-green-300  rounded-full cursor-pointer mr-5 px-4 py-1 active:scale-95 shadow-lg">Search</button>
+    </div>
+
+    <div id="card-container" class="scroll-smooth grid grid-cols-4  gap-5 w-[80%] h-auto mt-5 p-3">
+      <!-- <div id="${Math.floor(Math.random()*200)}" class="card w-full h-110 shadow-lg rounded-md p-3 cursor-pointer overflow-hidden hover:shadow-2xl ">
+        <img src="${item.Poster}" alt="Not found" id="image" class="w-full h-3/4  object-cover rounded-md ">
+        <div class="mt-2">
+          <h1><span class="font-medium">Name:</span> ${item.Title}</h1>
+          <h1><span class="font-medium">Year:</span> ${item.Year}</h1>
+          <button class="addToFav text-sm py-1 px-2 rounded-lg border mt-2 cursor-pointer hover:bg-red-400 hover:text-white">Add to Favorite</button>
+        </div>
+      </div> -->
+    </div>
+    <div id="page-switch" class=" flex gap-2 mt-10 mb-10 max-w-96 overflow-auto">
+
+    </div>
+
+    <div class="pageNo absolute top-32 right-20">
+      <p>You are on Page: </p>
+    </div>
+  </div>
+
+  <div class="my-favPage hidden  w-full h-screen  bg-white absolute top-0 ">
+    <button class="back-btn absolute top-6 right-19 border px-12 py-3 rounded-md hover:bg-red-400 cursor-pointer hover:scale-107 hover:text-white">Back</button>
+    <div class="w-full h-24  flex  items-center px-20 shadow-md">
+      <h1 class="text-4xl font-bold text-red-500">Favorites</h1>
+    </div>
+
+    <div class="h-[80vh] mt-8 w-full  overflow-y-hidden flex justify-center ">
+      <div class="favMovies overflow-y-auto grid grid-cols-4 gap-5 w-[80%] h-auto mt-5 p-3 ">
+      
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
