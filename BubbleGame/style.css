@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html, body{
+  width: 100vw;
+  height: 100vh;
+  /* background-color: #3a9634; */
+}
+.main{
+  width: 100%;
+  height: 100%;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+.panel{
+  width: 90%;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.score-bar{
+  width: 100%;
+  height: 15%;
+  background-color: #1a6d1f;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20%;
+}
+.elem{
+  /* background-color: aqua; */
+  display: flex;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.box{
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-left: 10px;
+  color: #ffffff;
+  font-size: 17px;
+  background-color: #000000;
+  font-weight: 600;
+}
+.field{
+  width: 100%;
+  height: 85%;
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  position: relative;
+}
+.bubble{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* padding: 10px; */
+  background-color: #1a6d1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  /* top: 0%; */
+}
+.bubble:active{
+  scale: 0.9;
+}
+.bubble:hover{
+  background-color: #52c15a;
+  cursor: pointer;
+}
+.startingPage{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgba(255, 255, 255, 0.178); */
+  backdrop-filter: blur(2px);
+  
+}
+.startWindow{
+  width: 50%;
+  height: 60%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.bubble-nav{
+  width: 100%;
+  height: 20%;
+  background-color: #52c15a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+.bubble-nav h1{
+  font-family: cursive;
+}
+.scoreCard{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.scorediv{
+  color: #2ea436;
+}
+.startbtn{
+  width: 250px;
+  height: 50px;
+  font-size: 30px;
+  background-color: #2ea436;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px 50px; */
+  margin: 15px 0;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.startbtn:active{
+  background-color: #256e2a;
+  scale: 0.9;
+}

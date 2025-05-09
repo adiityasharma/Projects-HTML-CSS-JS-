@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: white;
+  position: relative;
+}
+.main{
+  width: 100%;
+  font-family: "Lato", sans-serif;
+
+}
+.hero{
+  width: 100vw;
+  height: 100vh;
+}
+nav{
+  width: 100%;
+  height: 12%;
+  /* background-color: brown; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+}
+nav h1{
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+nav h2{
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.heading{
+  width: 100%;
+  height: 60%;
+  /* background-color: blueviolet; */
+  padding: 4vh 3vw;
+  overflow: hidden;
+}
+.heading h1{
+  font-size: 10vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 9.8vw;
+  opacity: 0.6;
+}
+
+.heading h2{
+  font-size: 10vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 8vw;
+  margin-left: 10.5vw;
+  opacity: 0.6;
+}
+.heading h5{
+  font-size: 1vw;
+  text-transform: uppercase;
+  margin-left: 52vw;
+  margin-top: 3vh;
+}
+.text1{
+  width: 100%;
+  height: 10%;
+  /* background-color: violet; */
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 2%;
+}
+.text1 h1{
+  font-size: 1.1vw;
+  font-weight: 500;
+  width: 28%;
+  text-align: end;
+  padding: 0 3vw;
+  text-transform: uppercase;
+}
+.work{
+  width: 100%;
+  padding: 0 3vw;
+  height: 12%;
+  /* background-color: tomato; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.work1{
+  /* width: 18%; */
+  font-size: 1vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 3vh;
+}
+.work1 i{
+  font-weight: 400;
+}
+.arrowbtn button{
+  padding: .8vh .9vh;
+  border-radius: 50%;
+  opacity: .7;
+}
+.arrowbtn button i{
+  font-weight: 700;
+}
+
+.second{
+  width: 100%;
+  /* height: auto; */
+  /* background-color: rgb(75, 28, 20); */
+  padding-left: 3vw;
+  padding-right: 10vw;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+.second .elem{
+  position: relative;
+  width: 100%;
+  padding: 4vw 0;
+  /* background-color: rgb(113, 36, 113); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+}
+.second .elem h1{
+  font-size: 6vw;
+  text-transform: uppercase;
+  opacity: .7;
+}
+.second .lastelem{
+  border-bottom: 1px solid gray;
+}
+.allwork{
+  width: 100%;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  /* padding: 0 10vw 0 0; */
+}
+.allwork button{
+  padding: 8px 30px;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  font-size: 1.2vw;
+}
+.allwork button:hover{
+  background-color: #fff;
+  color: black;
+}
+.second .elem img{
+  position: absolute;
+  z-index: 2;
+  width: 30%;
+  display: none;
+}
+.about{
+  width: 100%;
+  /* background-color: teal; */
+  display: flex;
+  align-items: center;
+  padding: 15vw 10vw;
+  padding-left: 35vw;
+  padding-right:15vw ;
+  justify-content: space-between;
+}
+.about img{
+  width: 15vw;
+  margin-right: 5vw;
+}
+.about .abouttext h1{
+  font-size: 1.1vw;
+  opacity: .7;
+  padding-bottom: .5vw;
+}
+.about .abouttext p{
+  line-height: 130%;
+  font-size: 1.2vw;
+}
+.about .abouttext button{
+  padding: 8px 23px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+.about .abouttext button:hover{
+  background-color: #fff;
+  color: black;
+}
+.subscribe{
+  width: 100%;
+  padding: 0vw 3vw;
+  padding-bottom: 5vw;
+  /* text-transform: uppercase; */
+}
+.subscribe h1{
+  text-transform: uppercase;
+  font-size: 1vw;
+  opacity: .7;
+  margin-bottom: 2px;
+}
+.subscribe h2{
+  font-size: 1vw;
+}
+.footer{
+  width: 100%;
+  padding: 1.5vw 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .left{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .5vw;
+  width: 12%;
+}
+.footer .right{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+.footer .right a{
+  text-decoration: none;
+  color: white;
+}
+.mincircle{
+  transition: all cubic-bezier(0.23, 1, 0.320, 1) .8s;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  /* left: 20%; */
+  z-index: 99;
+  transform: translate(-50% -50%);
+}
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+@media (max-width: 750px) {
+  nav{
+    height: 10%;
+    /* background-color: brown; */
+    padding: 0 5vw;
+  }
+  .heading{
+    width: 100%;
+    height: 30%;
+    /* background-color: blueviolet; */
+    padding: 3vh 5vw;
+  }
+  .heading h1{
+    font-size: 15vw;
+    line-height: 19vw;
+    opacity: 0.6;
+  }
+  .heading h2{
+    font-size: 15vw;
+    line-height: 8vw;
+    margin-left: 15vw; 
+  }
+  .heading h5{
+    font-size: 3.4vw;
+    margin-left: 55vw;
+    margin-top: 2vh;
+  }
+  .text1{
+    width: 100%;
+    height: 30%;
+    /* background-color: violet; */
+    align-items: flex-start;
+    margin-top: 18%;
+  }
+  .text1 h1{
+    font-size: 3.5vw;
+    font-weight: 500;
+    width: 80%;
+    text-align: end;
+    padding: 0 5vw;
+  }
+  .work{
+    width: 100%;
+    padding: 0 5vw;
+    height: 20%;
+    /* background-color: tomato; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .work1{
+    width: 50%;
+    font-size: 3vw;
+    font-weight: 600;
+    line-height: 2vh;
+  }
+  .mobileview{
+    width: 40%;
+  }
+  .work1 i{
+    font-weight: 400;
+  }
+  .arrowbtn {
+    display: none;
+  }
+
+  .second{
+    width: 100%;
+    margin-top: 1vh;
+  }
+  .second .elem{
+    position: relative;
+    width: 100%;
+    padding: 6vw 3vw;
+  }
+  .second .elem h1{
+    font-size: 8vw;
+    /* z-index: 1111; */
+  }
+  .second .elem p{
+    font-size: 3vw;
+  }
+  .second .lastelem{
+    border-bottom: 1px solid gray;
+  }
+  .allwork{
+    width: 100%;
+    height: 0px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    /* padding: 0 10vw 0 0; */
+    /* background-color: aquamarine; */
+    padding-top: 25px;
+  }
+  .allwork button{
+    font-size: 15px;
+    border-radius: 20px;
+  }
+  .about{
+    width: 100%;
+    /* background-color: teal; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    justify-content: space-between;
+  }
+  .about img{
+    padding-left: 10px;
+    width: 60%;
+    margin-right: 5vw;
+    margin-bottom: 15px;
+  }
+  .about .abouttext h1{
+    font-size: 20px;
+    opacity: .7;
+    padding-bottom: 15px;
+  }
+  .about .abouttext p{
+    line-height: 130%;
+    font-size: 20px;
+    padding-right: 20px;
+  }
+  .about .abouttext button{
+    padding: 8px 23px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .about .abouttext button:hover{
+    background-color: #fff;
+    color: black;
+  }
+  .subscribe{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0vw 4vw;
+    padding-bottom: 5vw;
+    /* text-transform: uppercase; */
+    /* background-color: aquamarine; */
+  }
+  .subscribe h1{
+    text-transform: uppercase;
+    font-size: 3vw;
+    opacity: .7;
+    margin-bottom: 2px;
+  }
+  .subscribe h2{
+    font-size: 3vw;
+  }
+  .footer{
+    width: 100%;
+    padding: 1.5vw 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer .left{
+    width: 100%;
+    padding: 10px 3vw ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2vw;
+  }
+  .footer .right{
+    border-top: 1px solid gray;
+    width: 100%;
+    font-size: 13px;
+    padding: 20px 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer .right a{
+    text-decoration: none;
+    color: white;
+  }
+  .mincircle{
+    display: none;
+  }
+}
